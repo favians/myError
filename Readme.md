@@ -1,3 +1,4 @@
+
 Editor: https://stackedit.io/app#
 
 ## Error Golang:
@@ -15,3 +16,9 @@ Editor: https://stackedit.io/app#
     Solution: Change golang folder to root ~/go
 
 
+## Error NodeJS:
+
+1. Error when nodeJS cant see watcher for changed code.
+> *Nodemon Error: System limit for number of file watchers reached
+
+    Solution: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
