@@ -1,4 +1,5 @@
 
+
 Editor: https://stackedit.io/app#
 
 ## Error Golang:
@@ -22,3 +23,10 @@ Editor: https://stackedit.io/app#
 > *Nodemon Error: System limit for number of file watchers reached
 
     Solution: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+## WSL Error
+1. Docker get error Docker Desktop failed to start
+	> Docker get error Docker Desktop failed to start
+
+`[https://github.com/docker/for-win/issues/4730](https://github.com/docker/for-win/issues/4730)` 
+
