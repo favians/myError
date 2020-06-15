@@ -1,5 +1,6 @@
 
 
+
 Editor: https://stackedit.io/app#
 
 ## Error Golang:
@@ -30,3 +31,10 @@ Editor: https://stackedit.io/app#
 
 `[https://github.com/docker/for-win/issues/4730](https://github.com/docker/for-win/issues/4730)` 
 
+## Setting Go Mod
+1. go env -w GOPRIVATE=github.com/{Company}
+2. git config --global url."https://{GITHUB_USER}:{GITHUB_TOKEN}@github.com".insteadOf "https://github.com"
+3. GONOPROXY=github.com/{Company} go get -d github.com/{Company}/{repo}@pre-release
+4. export GOPROXY=https://proxy.golang.org
+5. go mod download
+6. Add on ~/.profile APP_PATH=/home/king/sepulsa/disbursement (tujuannya biar config bisa terbaca)
