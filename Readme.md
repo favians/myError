@@ -31,6 +31,11 @@ Editor: https://stackedit.io/app#
 
 `[https://github.com/docker/for-win/issues/4730](https://github.com/docker/for-win/issues/4730)` 
 
+## Error when sudo docker-compose up --build -d
+1. docker.credentials.errors.InitializationError: docker-credential-desktop.exe not installed or not available in PATH
+`I just added _ before credsStore in this file ( ~/.docker/config.json ) {"_credsStore":"desktop.exe"}`
+
+
 ## Setting Go Mod
 1. go env -w GOPRIVATE=github.com/{Company}
 2. git config --global url."https://{GITHUB_USER}:{GITHUB_TOKEN}@github.com".insteadOf "https://github.com"
