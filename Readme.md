@@ -43,3 +43,6 @@ Editor: https://stackedit.io/app#
 4. export GOPROXY=https://proxy.golang.org
 5. go mod download
 6. Add on ~/.profile APP_PATH=/home/king/sepulsa/disbursement (tujuannya biar config bisa terbaca)
+
+## Docker Run WSL -> local error: tls: bad record MAC
+https://stackoverflow.com/questions/56946336/ubuntu-wsl2-git-getting-the-remote-end-hung-up-unexpectedly-on-large-repos
